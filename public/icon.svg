@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="120" fill="#2B5B84"/>
+  <rect x="24" y="24" width="464" height="464" rx="98" stroke="#FAF9F6" stroke-opacity="0.18" stroke-width="6"/>
+  <!-- Minimalist Origami Wing / Feather Motif -->
+  <path d="M126 356C166 254 248 168 386 128C346 210 296 278 214 318L126 356Z" fill="#FAF9F6"/>
+  <path d="M168 378C232 342 308 292 368 212C352 296 292 362 198 390L168 378Z" fill="#93C5FD" fill-opacity="0.85"/>
+  <circle cx="372" cy="142" r="10" fill="#C84B31"/>
+</svg>

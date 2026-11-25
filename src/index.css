@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-canvas: #faf9f6;
+    --bg-surface: #ffffff;
+    --bg-subtle: #f3f1eb;
+    --border-subtle: #e7e4dc;
+    --text-primary: #1c2331;
+    --text-secondary: #5c6574;
+    --accent-indigo: #2b5b84;
+    --accent-indigo-btn: #2b5b84;
+    --accent-indigo-soft: #eef4fa;
+    --accent-vermilion: #c84b31;
+    --accent-vermilion-soft: #fdf1ee;
+    --accent-matcha: #2e7d5b;
+    --accent-matcha-soft: #edf7f2;
+    --accent-ochre: #b4690e;
+    --accent-ochre-soft: #fef7ec;
+  }
+
+  .dark {
+    --bg-canvas: #10141c;
+    --bg-surface: #171d28;
+    --bg-subtle: #1f2735;
+    --border-subtle: #283244;
+    --text-primary: #e8ecf4;
+    --text-secondary: #98a4b8;
+    --accent-indigo: #7ab3e6;
+    --accent-indigo-btn: #2f6594;
+    --accent-indigo-soft: #1d2d40;
+    --accent-vermilion: #f0826b;
+    --accent-vermilion-soft: #331e1b;
+    --accent-matcha: #63be93;
+    --accent-matcha-soft: #172e25;
+    --accent-ochre: #e5a955;
+    --accent-ochre-soft: #312615;
+  }
+
+  html {
+    font-family: "Noto Sans SC", "Noto Sans JP", "PingFang SC", "Hiragino Kaku Gothic ProN", "Microsoft YaHei", sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+.font-jp {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+/* Crisp Furigana styling */
+ruby {
+  ruby-position: over;
+}
+
+ruby rt {
+  font-size: 0.56em;
+  font-weight: 500;
+  color: var(--text-secondary);
+  user-select: none;
+  line-height: 1;
+}
+
+/* Safe area padding for iPhone PWA */
+.pb-safe {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+/* Role highlight pills */
+.role-topic {
+  color: var(--accent-indigo);
+  background-color: var(--accent-indigo-soft);
+}
+.role-particle {
+  color: var(--accent-vermilion);
+  background-color: var(--accent-vermilion-soft);
+}
+.role-predicate {
+  color: var(--accent-matcha);
+  background-color: var(--accent-matcha-soft);
+}
+.role-modifier {
+  color: var(--accent-ochre);
+  background-color: var(--accent-ochre-soft);
+}
