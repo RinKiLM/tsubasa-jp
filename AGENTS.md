@@ -105,6 +105,7 @@
 - 错题本 + 离线二维码/魔法同步链接智能合并 + 可选 Supabase 实时云同步
 - 邀请朋友内测弹窗（二维码 + 微信文案 + 4 步清单）+ 结构化反馈中心
 - GitHub Pages 自动部署流水线与建表 SQL
+- 项目已公开发布到 `RinKiLM/tsubasa-jp`，Pages 使用 GitHub Actions 部署。
 
 ### ⏭️ 下一阶段待开发任务（供后续 Agent 接力）
 1. **v0.2（优先）— FSRS 间隔重复记忆引擎 + Stage 1（N5–N4 核心）**：
